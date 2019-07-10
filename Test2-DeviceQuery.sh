@@ -1,3 +1,8 @@
 #!/bin/bash
-./DeviceQuery_Solution
+if [ -z $1 ]; then
+    builddir="."
+else
+    builddir=$1
+fi
+$builddir/DeviceQuery_Solution
 
